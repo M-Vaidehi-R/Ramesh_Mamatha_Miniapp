@@ -1,0 +1,50 @@
+{
+    "Mini-Cooper-Electric": {
+        "name":"2023 Mini Cooper SE 3 Door",
+        "car-image":"electric.jpg",
+        "All-Inclusive-Price": "$43,556",
+        "Engine-Architecture": "Fully Electric Motor",
+        "0-100": "7.3s",
+        "Top-Speed": "150km/hr",
+        "Tank-Capacity": "N/A",
+        "Wheels": "195/55 R16",
+        "Wheel-Size": "6.5J x 16"
+    },
+
+    "Mini-Cooper-3Door": {
+        "name":"2023 Mini Cooper 3 Door",
+        "car-image":"3Door.jpg",
+        "All-Inclusive-Price": "$34,056",
+        "Engine-Architecture": "3 cylinder 12 valves, twin power turbo",
+        "0-100": "8s",
+        "Top-Speed": "210km/hr",
+        "Tank-Capacity": "44L",
+        "Wheels": "195/55 R16",
+        "Wheel-Size": "6.5J x 16"
+    },
+
+    "Mini-Cooper-5Door": {
+        "name":"2023 Mini Cooper S 5 Door",
+        "car-image":"5Door.jpg",
+        "All-Inclusive-Price": "$40756",
+        "Engine-Architecture": "4 cylinder 16 valves, twin power turbo",
+        "0-100": "6.9s",
+        "Top-Speed": "233km/hr",
+        "Tank-Capacity": "44L",
+        "Wheels": "195/55 R16",
+        "Wheel-Size": "6.5J x 16"
+    },
+
+    "Mini-Cooper-convertible": {
+        "name":"2023 Mini Cooper S",
+        "car-image":"convertible.jpg",
+        "All-Inclusive-Price": "$46356",
+        "Engine-Architecture": "4 cylinder 16 valves, twin scroll turbo",
+        "0-100": "7.2s",
+        "Top-Speed": "230km/hr",
+        "Tank-Capacity": "44L",
+        "Wheels": "195/55 R16",
+        "Wheel-Size": "6.5J x 16"
+    },
+
+}
