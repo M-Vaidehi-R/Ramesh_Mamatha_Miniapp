@@ -1,0 +1,37 @@
+body{
+   background-color: $main-bg;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-nav li{
+    color: $main-color;
+    display: none;
+}
+.end-nav a{
+    color: $main-color;
+    margin-right: 2em;
+
+}
+
+//Hamburger
+.hamburger{
+    display: block;
+}
+.hm{
+    background-color: white;
+    width: 35px;
+    height: 5px;
+    margin-top: .25em;
+    border-radius: 5px;
+}
+//hamburger style end
+
+.end-nav{
+    display: flex;
+    flex-direction: row;
+    margin: 1.5rem 0.5em 0em 18em ;
+}
