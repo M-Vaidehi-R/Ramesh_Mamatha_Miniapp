@@ -37,34 +37,39 @@
         </div>
     </header>
 
-    <div id="header-video">
+    <!--<div id="header-video">
         <video src="Videos/Header-Videos/HV-mobile" alt="header video"></video>
-    </div>
+    </div>-->
 
-    <template>
-        <img src="" alt="car images">
-        <!--load images from object and display here, when the user click on the drop menu,-->
-        <!--lightBox appears, showing all the information and the image of the selected in 3 row grid-->
-        <!--u have to figure out how to do that stuff now...fightinggggg, u got this girl-->
-    </template>
+    <main id="app">
+        <minilb @closelb="this.showLightBox=false" v-if="showLightBox" :mini="lightboxData"></minilb>
+        <nav id="carID">
+            <ul id="car-img">
+            <minithumb @loadlb="loadLightBox" v-for="mini in miniData" :mini="mini"></minithumb>
+        </ul>
+        </nav>
+        <minilb @closelb="this.showLightBox"false v-if="showLightBox"></minilb>
+    </main>
 
     <h2 class="tagline">Discover the fun in functionality</h2>
 
-    <div id="footer-video">
+   <!--<div id="footer-video">
         <video src="Videos/Footer-Videos/FV-Mobile" alt-="footer-video"></video>
-    </div>
+    </div>-->
 
     <section class="submission-form">
 
         <!--add the name and email colums, and submit button-->
     </section>
 
-    <footer class="footer">
+    <!--<footer class="footer">
         <h2 class="footer">Site-footer</h2>
         <img src="Images/Logos/logo-mobile.svg" alt="footer-logo">
-        <h3 class="credit">Mini Cooper Credit</h3>  <!--refer the actual website footer-->
-    </footer>
+        <h3 class="credit">Mini Cooper Credit</h3>  refer the actual website footer-->
+    <!--</footer>-->
     
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="JS/main.js" type="module" defer></script>
 </body>
 </html>
