@@ -1,0 +1,24 @@
+@media screen and (min-width: 1281px){
+
+    .hamburger{
+        display: none;
+    }
+
+    .main-nav li{
+        color: $main-color;
+        display: inline-block;
+        margin-top: 2em;
+    }
+
+    .main-nav a{
+        display:inline-flex;
+        margin: 4em;
+
+    }
+
+    .navigation a{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
