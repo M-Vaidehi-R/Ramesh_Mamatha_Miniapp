@@ -1,0 +1,16 @@
+@media screen and
+(min-width: 800px) 
+and (max-width: 1280px) {
+
+
+    .hamburger{
+        display: none;
+    }
+
+
+    .main-nav li{
+        color: $main-color;
+        display: inline-block;
+    }
+}
+

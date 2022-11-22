@@ -1,3 +1,24 @@
-.lbclose{
-    //display: none;
+
+.lightbox{
+    background-color: rgba(148, 148, 148, 0.5);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.lightbox h2{
+    font-size: x-large;
+    font-weight: bold;
+    margin: 2em;
+}
+.lightbox h3{
+    font-size: larger;
+    font-weight: 400;
+    margin: 1em;
+}
+
+nav ul li img{
+
+    border: black 1px solid;
+    padding-top:2em;
+    padding-bottom: 2em;
+
 }
