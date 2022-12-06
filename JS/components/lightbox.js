@@ -11,7 +11,7 @@ export default{
 
     <img @click="closeLB" src="Images/closeIcon.svg" class=lbclose>
     <article>
-    <img :src='"Images/" + mini.carimg' alt="car image">
+    <img id="lbImg" :src='"Images/" + mini.carimg' alt="car image">
     <h2>{{ mini.name }}</h2>
     <h3>{{ mini.price }}</h3>
     <h3>{{ mini.engine }}</h3>

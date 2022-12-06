@@ -19,7 +19,8 @@ body{
 
 //Hamburger
 .hamburger{
-    display: block;
+    margin-left: 55%;
+    margin-top: .5rem;
 }
 .hm{
     background-color: rgb(78,78,78);
@@ -28,10 +29,103 @@ body{
     margin-top: .25em;
     border-radius: 5px;
 }
+
+.navigation{
+    display: none;
+}
 //hamburger style end
 
-.end-nav{
-    display: flex;
-    flex-direction: row;
-    margin: 1.5rem 0.5em 0em 18em ;
+//Vue thumb display
+
+.mini-thumb-display{
+    display: block;
 }
+.mini-thumb-display img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.car-intro{
+    text-align: center;
+}
+
+// thumb display end
+
+.tagline{
+    text-align: center;
+    font-size: x-large;
+    margin: 2rem 0rem;
+}
+
+//form 
+#contact-form{
+    display: flex;
+    flex-direction: column;
+   // align-items:stretch;
+    margin: 2rem;
+}
+
+#firstname{
+    height: 3rem;
+    box-shadow: 5px 3px rgb(0, 18, 136);
+    margin-bottom: 1.5rem;
+}
+
+#email{
+    height: 3rem;
+    box-shadow: 5px 3px rgb(0, 18, 136);
+    margin-bottom: 1.5rem;
+}
+
+.submit{
+    height: 3rem;
+    width: 9rem;
+    background-color:rgb(151, 161, 255);
+    box-shadow: 5px 3px rgb(0, 18, 136);
+}
+
+//End Form
+
+//Shop Nav
+
+.shop{
+    h2{
+        text-align: center;
+        font-size: xx-large;
+    }
+
+    a{
+        text-align: center;
+        text-decoration: none;
+        font-size:large;
+        color: $main-bg;
+    }
+}
+.shop-opt{
+    padding: 1rem 0rem;
+    background-color:rgb(0, 18, 136);
+    }
+
+
+    //footer
+
+    .footer-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 1rem 2rem;
+    }
+
+    .footer img{
+        display: block;
+        margin: auto;
+    }
+//grid
+.two-items {
+    display: grid;
+    grid-column: 2 / span 2;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-evenly;
+    row-gap: 2em;
+    column-gap: 2em;
+  }

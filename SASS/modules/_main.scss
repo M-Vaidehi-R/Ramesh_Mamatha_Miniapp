@@ -1,24 +1,40 @@
 
 .lightbox{
-    background-color: rgba(148, 148, 148, 0.5);
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(241, 241, 241);
+    border: 3px solid darkblue;
+    top: 18%;
+    left: 1%;
+    right: 1%;
+    z-index: 1002;
+    overflow: auto;
+    position: fixed;
+    transition:opacity 0.5s ease;
 }
 
 .lightbox h2{
     font-size: x-large;
     font-weight: bold;
     margin: 2em;
+    text-align: center;
 }
 .lightbox h3{
     font-size: larger;
     font-weight: 400;
     margin: 1em;
+    text-align: center;
+}
+#lbImg{
+    display: block;
+    margin: auto;
 }
 
 nav ul li img{
-
-    border: black 1px solid;
+    display: block;
+    margin: auto;
     padding-top:2em;
     padding-bottom: 2em;
+}
 
+nav ul li img:hover{
+    background-color: darkblue;
 }
