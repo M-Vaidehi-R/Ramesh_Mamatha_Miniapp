@@ -8,9 +8,64 @@ and (max-width: 1280px) {
     }
 
 
-    .main-nav li{
+    .navigation{
+        display: block;
+    }
+    .main-nav{
         color: $main-color;
-        display: inline-block;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 50%;
+        margin-top: -4rem;
+        margin-right: 5%;
+    }
+    .main-nav a{
+        font-size:x-large;
+        margin-left: 1rem;
+        text-decoration: none;
+    }
+
+    .header img{
+        width:17%;
+        height: auto;
+    }
+
+
+    //vue thumb
+
+    .mini-thumb-display{
+        display: grid;
+        grid-column: 2 / span 2;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-evenly;
+        row-gap: 0em;
+        column-gap: 2em;
+    }
+
+    .car-intro{
+        text-align: center;
+        margin: auto;
+    }
+
+    .tagline{
+        font-size: xx-large;
+    }
+
+    .get-to-know h3{
+        text-align: left;
+        margin-left: 8rem;
+        font-size: x-large;
+    }
+
+    #contact-form{
+        margin:1rem 8rem;
+    }
+
+    .shop-opt{
+        display: flex !important;
+        flex-direction: row;
+        padding: 2rem;
     }
 }
 
