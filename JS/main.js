@@ -29,6 +29,7 @@ import miniLightBox from './components/lightbox.js';
             loadLightBox(item) {  //when u click on thumbnail, this function invokes
                 this.lightboxData = item;
                 this.showLightBox=true;
+                //document.getElementsByTagName("body").style.opacity = "0";
             }
         },
 
