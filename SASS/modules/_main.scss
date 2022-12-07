@@ -1,8 +1,10 @@
-
+body{
+    background-color: rgb(246, 246, 140);
+}
 .lightbox{
     background-color: rgb(241, 241, 241);
     border: 3px solid darkblue;
-    top: 18%;
+    top: 10%;
     left: 1%;
     right: 1%;
     z-index: 1002;
@@ -26,6 +28,7 @@
 #lbImg{
     display: block;
     margin: auto;
+    width: 20%;
 }
 
 nav ul li img{
@@ -36,5 +39,10 @@ nav ul li img{
 }
 
 nav ul li img:hover{
-    background-color: darkblue;
+    background-color: rgb(176, 187, 230);
+}
+
+.get-to-know{
+    background-image: url(../Images/mini-header3.jpg);
+    padding: 4rem;
 }

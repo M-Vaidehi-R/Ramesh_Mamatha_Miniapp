@@ -31,6 +31,7 @@ import miniLightBox from './components/lightbox.js';
                 this.showLightBox=true;
                 //document.getElementsByTagName("body").style.opacity = "0";
             }
+
         },
 
         components: {

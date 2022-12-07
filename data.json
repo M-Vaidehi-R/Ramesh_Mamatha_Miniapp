@@ -1,50 +1,63 @@
 {
     "Mini-Cooper-Electric": {
         "mini_name":"2023 Mini Cooper SE 3 Door",
-        "mini_img":"electric.jpg",
+        "mini_img":"electric.png",
         "mini_price": "$43,556",
         "mini_engine": "Fully Electric Motor",
         "mini_speedometer": "7.3s",
         "mini_maxspeed": "150km/hr",
         "mini_tankcapacity": "N/A",
         "mini_wheels": "195/55 R16",
-        "mini_wheelsize": "6.5J x 16"
+        "mini_wheelsize": "6.5J x 16",
+        "mini_disp_one":"one-electric.jpg",
+        "mini_disp_two":"two-electric.jpg",
+        "mini_disp_three":"three-electric.jpg"
+
     },
 
     "Mini-Cooper-3Door": {
         "mini_name":"2023 Mini Cooper 3 Door",
-        "mini_img":"3Door.jpg",
+        "mini_img":"3door.png",
         "mini_price": "$34,056",
         "mini_engine": "3 cylinder 12 valves, twin power turbo",
         "mini_speedometer": "8s",
         "mini_maxspeed": "210km/hr",
         "mini_tankcapacity": "44L",
         "mini_wheels": "195/55 R16",
-        "mini_wheelsize": "6.5J x 16"
+        "mini_wheelsize": "6.5J x 16",
+        "mini_disp_one":"one-3.jpg",
+        "mini_disp_two":"two-3.jpg",
+        "mini_disp_three":"three-3.jpg"
     },
 
     "Mini-Cooper-5Door": {
         "mini_name":"2023 Mini Cooper S 5 Door",
-        "mini_img":"5Door.jpg",
+        "mini_img":"5door.png",
         "mini_price": "$40756",
         "mini_engine": "4 cylinder 16 valves, twin power turbo",
         "mini_speedometer": "6.9s",
         "mini_maxspeed": "233km/hr",
         "mini_tankcapacity": "44L",
         "mini_wheels": "195/55 R16",
-        "mini_wheelsize": "6.5J x 16"
+        "mini_wheelsize": "6.5J x 16",
+        "mini_disp_one":"one-5.jpg",
+        "mini_disp_two":"two-5.jpg",
+        "mini_disp_three":"three-5.jpg"
     },
 
     "Mini-Cooper-convertible": {
         "mini_name":"2023 Mini Cooper S",
-        "mini_img":"convertible.jpg",
+        "mini_img":"convertible.png",
         "mini_price": "$46356",
         "mini_engine": "4 cylinder 16 valves, twin scroll turbo",
         "mini_speedometer": "7.2s",
         "mini_maxspeed": "230km/hr",
         "mini_tankcapacity": "44L",
         "mini_wheels": "195/55 R16",
-        "mini_wheelsize": "6.5J x 16"
+        "mini_wheelsize": "6.5J x 16",
+        "mini_disp_one":"one-convert.jpg",
+        "mini_disp_two":"two-convert.jpg",
+        "mini_disp_three":"three-convert.jpg"
     }
 
 }
