@@ -1,50 +1,50 @@
 {
     "Mini-Cooper-Electric": {
-        "name":"2023 Mini Cooper SE 3 Door",
-        "carimg":"electric.jpg",
-        "price": "$43,556",
-        "engine": "Fully Electric Motor",
-        "speedometer": "7.3s",
-        "maxspeed": "150km/hr",
-        "tankcapacity": "N/A",
-        "wheels": "195/55 R16",
-        "wheelsize": "6.5J x 16"
+        "mini_name":"2023 Mini Cooper SE 3 Door",
+        "mini_img":"electric.jpg",
+        "mini_price": "$43,556",
+        "mini_engine": "Fully Electric Motor",
+        "mini_speedometer": "7.3s",
+        "mini_maxspeed": "150km/hr",
+        "mini_tankcapacity": "N/A",
+        "mini_wheels": "195/55 R16",
+        "mini_wheelsize": "6.5J x 16"
     },
 
     "Mini-Cooper-3Door": {
-        "name":"2023 Mini Cooper 3 Door",
-        "carimg":"3Door.jpg",
-        "price": "$34,056",
-        "engine": "3 cylinder 12 valves, twin power turbo",
-        "speedometer": "8s",
-        "maxspeed": "210km/hr",
-        "tankcapacity": "44L",
-        "wheels": "195/55 R16",
-        "wheelsize": "6.5J x 16"
+        "mini_name":"2023 Mini Cooper 3 Door",
+        "mini_img":"3Door.jpg",
+        "mini_price": "$34,056",
+        "mini_engine": "3 cylinder 12 valves, twin power turbo",
+        "mini_speedometer": "8s",
+        "mini_maxspeed": "210km/hr",
+        "mini_tankcapacity": "44L",
+        "mini_wheels": "195/55 R16",
+        "mini_wheelsize": "6.5J x 16"
     },
 
     "Mini-Cooper-5Door": {
-        "name":"2023 Mini Cooper S 5 Door",
-        "carimg":"5Door.jpg",
-        "price": "$40756",
-        "engine": "4 cylinder 16 valves, twin power turbo",
-        "speedometer": "6.9s",
-        "maxspeed": "233km/hr",
-        "tankcapacity": "44L",
-        "wheels": "195/55 R16",
-        "wheelsize": "6.5J x 16"
+        "mini_name":"2023 Mini Cooper S 5 Door",
+        "mini_img":"5Door.jpg",
+        "mini_price": "$40756",
+        "mini_engine": "4 cylinder 16 valves, twin power turbo",
+        "mini_speedometer": "6.9s",
+        "mini_maxspeed": "233km/hr",
+        "mini_tankcapacity": "44L",
+        "mini_wheels": "195/55 R16",
+        "mini_wheelsize": "6.5J x 16"
     },
 
     "Mini-Cooper-convertible": {
-        "name":"2023 Mini Cooper S",
-        "carimg":"convertible.jpg",
-        "price": "$46356",
-        "engine": "4 cylinder 16 valves, twin scroll turbo",
-        "speedometer": "7.2s",
-        "maxspeed": "230km/hr",
-        "tankcapacity": "44L",
-        "wheels": "195/55 R16",
-        "wheelsize": "6.5J x 16"
+        "mini_name":"2023 Mini Cooper S",
+        "mini_img":"convertible.jpg",
+        "mini_price": "$46356",
+        "mini_engine": "4 cylinder 16 valves, twin scroll turbo",
+        "mini_speedometer": "7.2s",
+        "mini_maxspeed": "230km/hr",
+        "mini_tankcapacity": "44L",
+        "mini_wheels": "195/55 R16",
+        "mini_wheelsize": "6.5J x 16"
     }
 
 }

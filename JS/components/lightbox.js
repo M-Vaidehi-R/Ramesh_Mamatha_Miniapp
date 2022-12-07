@@ -11,15 +11,15 @@ export default{
 
     <img @click="closeLB" src="Images/closeIcon.svg" class=lbclose>
     <article>
-    <img id="lbImg" :src='"Images/" + mini.carimg' alt="car image">
-    <h2>{{ mini.name }}</h2>
-    <h3>{{ mini.price }}</h3>
-    <h3>{{ mini.engine }}</h3>
-    <h3>{{ mini.speedometer }}</h3>
-    <h3>{{ mini.maxspeed }}</h3>
-    <h3>{{ mini.tankcapacity }}</h3>
-    <h3>{{ mini.wheels }}</h3>
-    <h3>{{ mini.wheelsize }}</h3>
+    <img id="lbImg" :src='"Images/" + mini.mini_img' alt="car image">
+    <h2>{{ mini.mini_name }}</h2>
+    <h3>{{ mini.mini_price }}</h3>
+    <h3>{{ mini.mini_engine }}</h3>
+    <h3>{{ mini.mini_speedometer }}</h3>
+    <h3>{{ mini.mini_maxspeed }}</h3>
+    <h3>{{ mini.mini_tankcapacity }}</h3>
+    <h3>{{ mini.mini_wheels }}</h3>
+    <h3>{{ mini.mini_wheelsize }}</h3>
     </article>
     </section>
 

@@ -8,10 +8,10 @@ export default{
     template: 
     `
     <li @click="loadlightboxdata" class="mini-thumb-display">
-    <img :src='"Images/" + mini.carimg' alt="Mini Cooper Image">
+    <img :src='"Images/" + mini.mini_img' alt="Mini Cooper Image">
     <div class="car-intro">
-    <h2> {{ mini.name }} </h2>
-    <h3> {{ mini.price }} </h3>
+    <h2> {{ mini.mini_name }} </h2>
+    <h3> {{ mini.mini_price }} </h3>
     </div>
     </li>
     `,
