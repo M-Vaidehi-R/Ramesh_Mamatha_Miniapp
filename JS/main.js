@@ -11,7 +11,7 @@ import miniLightBox from './components/lightbox.js';
 
         created() {   
               //fetching datab from data.json    
-              fetch('./data.json')  //go and get the remote data
+              fetch('./scripts/json.php')  //go and get the remote data
               .then(res => res.json()) //convert the json object to plain JS object
               .then(data => this.miniData = data)  //store the data in the vue instance
               .catch(error => console.error(error)); 

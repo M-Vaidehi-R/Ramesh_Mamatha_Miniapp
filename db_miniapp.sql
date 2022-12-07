@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Dec 06, 2022 at 09:10 PM
+-- Generation Time: Dec 06, 2022 at 09:38 PM
 -- Server version: 5.7.36
 -- PHP Version: 7.4.26
 
@@ -55,7 +55,7 @@ CREATE TABLE IF NOT EXISTS `tbl_mini_engine` (
   `mini_engine_id` tinyint(4) NOT NULL AUTO_INCREMENT,
   `mini_engine` varchar(350) NOT NULL,
   PRIMARY KEY (`mini_engine_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=latin1 COMMENT='mini engine ';
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1 COMMENT='mini engine ';
 
 --
 -- Dumping data for table `tbl_mini_engine`
@@ -104,20 +104,32 @@ CREATE TABLE IF NOT EXISTS `tbl_mini_name` (
   `mini_name` varchar(350) NOT NULL,
   `mini_img_id` tinyint(4) NOT NULL,
   `mini_price_id` tinyint(4) NOT NULL,
+  `mini_engine_id` tinyint(4) NOT NULL,
+  `mini_maxspeed_id` tinyint(4) NOT NULL,
+  `mini_speedometer_id` tinyint(4) NOT NULL,
+  `mini_tankcapacity_id` tinyint(4) NOT NULL,
+  `mini_wheels_id` tinyint(4) NOT NULL,
+  `mini_wheelsize_id` tinyint(4) NOT NULL,
   PRIMARY KEY (`mini_name_id`),
   KEY `mini_img_id` (`mini_img_id`),
-  KEY `mini_price_id` (`mini_price_id`)
+  KEY `mini_price_id` (`mini_price_id`),
+  KEY `mini_engine_id` (`mini_engine_id`),
+  KEY `mini_maxspeed_id` (`mini_maxspeed_id`),
+  KEY `mini_speedometer_id` (`mini_speedometer_id`),
+  KEY `mini_tankcapacity_id` (`mini_tankcapacity_id`),
+  KEY `mini_wheels_id` (`mini_wheels_id`),
+  KEY `mini_wheelsize_id` (`mini_wheelsize_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1 COMMENT='For car name and id';
 
 --
 -- Dumping data for table `tbl_mini_name`
 --
 
-INSERT INTO `tbl_mini_name` (`mini_name_id`, `mini_name`, `mini_img_id`, `mini_price_id`) VALUES
-(1, '2023 Mini Cooper SE 3 Door', 1, 1),
-(2, '2023 Mini Cooper 3 Door', 2, 2),
-(3, '2023 Mini Cooper S 5 Door', 3, 3),
-(4, '2023 Mini Cooper S', 4, 4);
+INSERT INTO `tbl_mini_name` (`mini_name_id`, `mini_name`, `mini_img_id`, `mini_price_id`, `mini_engine_id`, `mini_maxspeed_id`, `mini_speedometer_id`, `mini_tankcapacity_id`, `mini_wheels_id`, `mini_wheelsize_id`) VALUES
+(1, '2023 Mini Cooper SE 3 Door', 1, 1, 1, 1, 1, 1, 1, 1),
+(2, '2023 Mini Cooper 3 Door', 2, 2, 2, 2, 2, 2, 1, 1),
+(3, '2023 Mini Cooper S 5 Door', 3, 3, 3, 3, 3, 2, 1, 1),
+(4, '2023 Mini Cooper S', 4, 4, 4, 4, 4, 2, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -176,7 +188,7 @@ CREATE TABLE IF NOT EXISTS `tbl_mini_tankcapacity` (
   `mini_tankcapacity_id` tinyint(4) NOT NULL AUTO_INCREMENT,
   `mini_tankcapacity` varchar(250) NOT NULL,
   PRIMARY KEY (`mini_tankcapacity_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1 COMMENT='tankcapacity';
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1 COMMENT='tankcapacity';
 
 --
 -- Dumping data for table `tbl_mini_tankcapacity`
@@ -243,7 +255,13 @@ ALTER TABLE `tbl_mini_maxspeed`
 --
 ALTER TABLE `tbl_mini_name`
   ADD CONSTRAINT `tbl_mini_name_ibfk_1` FOREIGN KEY (`mini_img_id`) REFERENCES `tbl_mini_carimg` (`mini_img_id`),
-  ADD CONSTRAINT `tbl_mini_name_ibfk_2` FOREIGN KEY (`mini_price_id`) REFERENCES `tbl_mini_price` (`mini_price_id`);
+  ADD CONSTRAINT `tbl_mini_name_ibfk_2` FOREIGN KEY (`mini_price_id`) REFERENCES `tbl_mini_price` (`mini_price_id`),
+  ADD CONSTRAINT `tbl_mini_name_ibfk_3` FOREIGN KEY (`mini_engine_id`) REFERENCES `tbl_mini_engine` (`mini_engine_id`),
+  ADD CONSTRAINT `tbl_mini_name_ibfk_4` FOREIGN KEY (`mini_maxspeed_id`) REFERENCES `tbl_mini_maxspeed` (`mini_maxspeed_id`),
+  ADD CONSTRAINT `tbl_mini_name_ibfk_5` FOREIGN KEY (`mini_speedometer_id`) REFERENCES `tbl_mini_speedometer` (`mini_speedometer_id`),
+  ADD CONSTRAINT `tbl_mini_name_ibfk_6` FOREIGN KEY (`mini_tankcapacity_id`) REFERENCES `tbl_mini_tankcapacity` (`mini_tankcapacity_id`),
+  ADD CONSTRAINT `tbl_mini_name_ibfk_7` FOREIGN KEY (`mini_wheels_id`) REFERENCES `tbl_mini_wheels` (`mini_wheels_id`),
+  ADD CONSTRAINT `tbl_mini_name_ibfk_8` FOREIGN KEY (`mini_wheelsize_id`) REFERENCES `tbl_mini_wheelsize` (`mini_wheelsize_id`);
 
 --
 -- Constraints for table `tbl_mini_wheels`
