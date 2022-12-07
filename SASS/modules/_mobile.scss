@@ -2,10 +2,6 @@ body{
    background-color: $main-bg;
 }
 
-.header {
-   // display: flex;
-   // flex-direction: row;
-}
 
 .main-nav li{
     color: $main-color;
@@ -19,13 +15,13 @@ body{
 
 //Hamburger
 .hamburger{
-    margin-left: 55%;
-    margin-top: .5rem;
+    margin-left: 85%;
+    margin-top: -2.5rem;
 }
 .hm{
     background-color: rgb(78,78,78);
-    width: 35px;
-    height: 5px;
+    width: 30px;
+    height: 4px;
     margin-top: .25em;
     border-radius: 5px;
 }
@@ -33,77 +29,198 @@ body{
 .navigation{
     display: none;
 }
-//hamburger style end
 
-//Vue thumb display
-
-.mini-thumb-display{
-    display: block;
-}
-.mini-thumb-display img{
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-}
-.car-intro{
-    text-align: center;
+.header-img img{
+    width:100%;
+    height: auto;
+    margin-top: 2rem;
 }
 
-// thumb display end
+//end header
+
+        //text
+
+        .mini-innovation{
+            text-align: center;
+            margin: 2rem 0rem;
+    
+            h2{
+                font-size:1.25rem;
+                margin-top: 1rem;
+            }
+    
+            h3{
+                font-size: 1.5rem;
+                margin: .5rem .5rem;
+            }
+    
+            p{
+                font-size: 1rem;
+                margin: .5rem 1rem;
+            }
+        }
+
+        //end text
+
+    //vue thumb
+
+    #car-img{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+    .mini-thumb-display{
+        display: block;
+    }
+
+    .mini-thumb-display img{
+        display: block;
+        margin: auto;
+        width:100%;
+        height:auto;
+    }
+
+    .car-intro{
+        text-align: center;
+        font-size: .5rem;
+    }
+
+    //end vue
+
+     //lightbox
+
+     .lightbox{
+        background-color: rgba(71, 71, 71, 0.846);
+        border: 3px solid rgba(82, 82, 85, 0.542);
+        top: 15%;
+        z-index: 1002;
+        overflow: auto;
+        position: fixed;
+
+        display: grid;
+        grid-column: 2 / span 2;
+        grid-template-columns: 1fr;
+        padding: 4rem 0rem;
+    }
+
+    .lightbox h2{
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: white;
+        margin-left: 1rem;
+    }
+    .lightbox h3{
+        font-size: 1rem;
+        font-weight: 400;
+        text-align: left;
+        color: white;
+        margin-left: 1rem;
+    }
+    #lbImg{
+        width: 30%;
+    }
+
+    //end light box
 
 .tagline{
-    text-align: center;
-    font-size: x-large;
+    font-size: 1rem;
+    background-color: rgba(238, 238, 24, 0.54);
+    padding: 1rem;
     margin: 2rem 0rem;
+    text-align: center;
 }
 
-//form 
-#contact-form{
-    display: flex;
-    flex-direction: column;
-   // align-items:stretch;
-    margin: 2rem;
-}
 
-#firstname{
-    height: 3rem;
-    box-shadow: 5px 3px rgb(0, 18, 136);
-    margin-bottom: 1.5rem;
-}
+.get-to-know{
 
-#email{
-    height: 3rem;
-    box-shadow: 5px 3px rgb(0, 18, 136);
-    margin-bottom: 1.5rem;
-}
+    h3{
+       text-align: left;
+       margin-left: 1rem;
+       font-size: larger;
+       color: white;
+   }
 
-.submit{
-    height: 3rem;
-    width: 9rem;
-    background-color:rgb(151, 161, 255);
-    box-shadow: 5px 3px rgb(0, 18, 136);
-}
+   P{
+       text-align:center;
+       color: white;
+       font-size: .5rem;
+   }
+   }
 
-//End Form
+   #contact-form{
+       margin:1rem 1rem;
+   }
+
+   #firstname{
+       height: 2rem;
+       box-shadow: 5px 3px rgb(0, 18, 136);
+       margin-bottom: 1.5rem;
+   }
+   
+   #email{
+       height: 2rem;
+       box-shadow: 5px 3px rgb(0, 18, 136);
+       margin-bottom: 1.5rem;
+   }
+   
+   .submit{
+       height: 2rem;
+       width: 5rem;
+       background-color:rgb(151, 161, 255);
+       box-shadow: 5px 3px rgb(66, 88, 230);
+   }
+
+   //end form
+
+    //gallery
+
+    .three-items{
+        display: grid;
+        grid-column: 2 / span 2;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .gallery{
+        //margin-left: 1rem;
+        margin-bottom:4rem ;
+        img{
+            width:100%;
+            height: auto;
+            border: 2px solid yellow;
+        }
+
+        img:hover{
+            opacity: 70%;
+        }
+    }
+
+       //end gallery
+
+
 
 //Shop Nav
 
 .shop{
-    h2{
-        text-align: center;
-        font-size: xx-large;
-    }
-
+    display: none;
     a{
         text-align: center;
         text-decoration: none;
-        font-size:large;
+        font-size:.5rem;
         color: $main-bg;
     }
 }
 .shop-opt{
     padding: 1rem 0rem;
     background-color:rgb(0, 18, 136);
+    }
+
+    video{
+        height:auto;
+        width: 70%;
+        border: 5px solid rgb(193, 212, 20);
+        display: block;
+        margin: auto;
     }
 
 

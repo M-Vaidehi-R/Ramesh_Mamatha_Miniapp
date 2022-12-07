@@ -16,56 +16,242 @@ and (max-width: 1280px) {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-left: 50%;
-        margin-top: -4rem;
+        margin-left: 40%;
+        margin-top: -8rem;
         margin-right: 5%;
     }
     .main-nav a{
-        font-size:x-large;
-        margin-left: 1rem;
+        font-size:1.5rem;
+        margin-left: 0rem;
         text-decoration: none;
     }
 
     .header img{
-        width:17%;
+        width:15%;
         height: auto;
+        margin-bottom: 5rem;
     }
+
+    .header-img img{
+        width:100%;
+        height: auto;
+        margin-top: 3rem;
+    }
+
+    //end header
+
+        //text
+
+        .mini-innovation{
+            text-align: center;
+            margin: 4rem 2rem;
+    
+            h2{
+                font-size:1.5rem;
+                margin-top: 1rem;
+            }
+    
+            h3{
+                font-size: 2.5rem;
+                margin: 1rem .5rem;
+            }
+    
+            p{
+                font-size: 1.25rem;
+                margin: .5rem 2rem;
+            }
+        }
+
+        //end
 
 
     //vue thumb
 
+    #car-img{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 4rem;
+    }
     .mini-thumb-display{
-        display: grid;
-        grid-column: 2 / span 2;
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: space-evenly;
-        row-gap: 0em;
-        column-gap: 2em;
+        display: block;
+    }
+
+    .mini-thumb-display img{
+        display: block;
+        margin: auto;
+        width:110%;
+        height:auto;
     }
 
     .car-intro{
         text-align: center;
+        font-size: 1.1rem;
+    }
+
+    //end vue
+
+        //lightbox
+
+        .lightbox{
+            background-color: rgba(71, 71, 71, 0.846);
+            border: 3px solid rgba(82, 82, 85, 0.542);
+            top: 5%;
+            left: 1%;
+            right: 1%;
+            z-index: 1002;
+            overflow: auto;
+            position: fixed;
+            padding: 8rem 2rem;
+    
+            display: grid;
+            grid-column: 2 / span 2;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: space-evenly;
+            row-gap: 2em;
+            column-gap: 2em;
+        }
+    
+        .lightbox h2{
+            font-size: 1.5rem;
+            //font-weight: bold;
+            margin: 2em;
+            text-align: center;
+            color: white;
+        }
+        .lightbox h3{
+            font-size: 1rem;
+            font-weight: 400;
+            margin: 1em;
+            text-align: center;
+            color: white;
+        }
+        #lbImg{
+            width: 150%;
+            margin-left: -5rem;
+        }
+    
+        //end light box
+
+
+    .tagline{
+        font-size: 2rem;
+        background-color: rgba(238, 238, 24, 0.54);
+        padding: 2rem;
+        margin: 4rem 0rem;
+        text-align: center;
+    }
+
+    //form
+
+    .get-to-know{
+
+        h3{
+           text-align: left;
+           margin-left: 5rem;
+           font-size: x-large;
+           color: white;
+       }
+   
+       P{
+           text-align:center;
+           color: white;
+           font-size: larger;
+       }
+       }
+   
+       #contact-form{
+           margin:1rem 5rem;
+       }
+   
+       #firstname{
+           height: 4rem;
+           box-shadow: 5px 3px rgb(0, 18, 136);
+           margin-bottom: 1.5rem;
+       }
+       
+       #email{
+           height: 4rem;
+           box-shadow: 5px 3px rgb(0, 18, 136);
+           margin-bottom: 1.5rem;
+       }
+       
+       .submit{
+           height: 4rem;
+           width: 12rem;
+           background-color:rgb(151, 161, 255);
+           box-shadow: 5px 3px rgb(66, 88, 230);
+       }
+
+       //end form
+
+       .shop-opt{
+        display: flex !important;
+        flex-direction: row;
+        margin-bottom: 5rem;
+    }
+
+    .shop-opt a{
+        padding: 1rem;
+    }
+
+    .shop-opt a:hover{
+        background-color: rgb(235, 237, 115);
+        color: black;
+    }
+
+       //gallery
+
+       .three-items{
+        display: grid;
+        grid-column: 2 / span 2;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .gallery{
+        //margin-left: 1rem;
+        margin-bottom:4rem ;
+        img{
+            width:100%;
+            height: auto;
+            border: 2px solid yellow;
+        }
+
+        img:hover{
+            opacity: 70%;
+        }
+    }
+
+       //end gallery
+
+
+
+       //video
+
+       video{
+        height:auto;
+        width: 70%;
+        border: 5px solid rgb(193, 212, 20);
+        display: block;
         margin: auto;
     }
 
-    .tagline{
-        font-size: xx-large;
-    }
-
-    .get-to-know h3{
-        text-align: left;
-        margin-left: 8rem;
-        font-size: x-large;
-    }
-
-    #contact-form{
-        margin:1rem 8rem;
-    }
-
-    .shop-opt{
-        display: flex !important;
+    //footer
+    .footer-nav{
+        display: flex;
         flex-direction: row;
-        padding: 2rem;
+        justify-content: space-between;
+        margin: 5rem 10rem 1rem 10rem;
+        font-size: 1.5rem;
+
+        text-decoration: underline rgb(85, 85, 238);
+    }
+
+    .footer img{
+        display: block;
+        margin: auto;
+        width: 15%;
+        height: auto;
     }
 }
 
