@@ -156,12 +156,14 @@ body{
        height: 2rem;
        box-shadow: 5px 3px rgb(0, 18, 136);
        margin-bottom: 1.5rem;
+       width:21rem;
    }
    
    #email{
        height: 2rem;
        box-shadow: 5px 3px rgb(0, 18, 136);
        margin-bottom: 1.5rem;
+       width:21rem;
    }
    
    .submit{
@@ -202,7 +204,7 @@ body{
 //Shop Nav
 
 .shop{
-    display: none;
+    
     a{
         text-align: center;
         text-decoration: none;
@@ -211,6 +213,7 @@ body{
     }
 }
 .shop-opt{
+    display: none;
     padding: 1rem 0rem;
     background-color:rgb(0, 18, 136);
     }
