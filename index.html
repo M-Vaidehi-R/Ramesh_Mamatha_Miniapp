@@ -36,6 +36,15 @@
     <img src="Images/mini-header2.jpg" alt="header">
     </div>
 
+    <section class="mini-innovation">
+        <h2>Mini connected</h2>
+        <h3>Innovation made Seamless</h3>
+        <p>MINI’s premium cockpit technology makes your motoring experience as convenient as it is thrilling. 
+            Thoughtfully designed with our drivers in mind, our technology integrates a host of innovative infotainment apps and intelligent services into an easy-to-use 6.5” or 8.8” Touchscreen interface, positioned in the centre of the dash. So no matter where you are, 
+            or where the road takes you, you’ll always have a seamless connection to the world around you – right at your beck-and-call.</p>
+    </section>
+
+
     <main id="app">
         <minilb @closelb="this.showLightBox=false" v-if="showLightBox" :mini="lightboxData"></minilb>
         <nav id="carID">
@@ -52,28 +61,72 @@
         <h3>Whats your name?</h3>
 
         <form id="contact-form">
-            <label for="firstname">First Name</label>
-            <input type="text" id="firstname" name="firstname" required="required">
+            <label for="firstname" hidden>First Name</label>
+            <input type="text" id="firstname" name="firstname" required="required" placeholder="first name">
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+            <label for="email" hidden>Email</label>
+            <input type="email" id="email" name="email" required placeholder="e-mail">
 
             <input type="submit" class="submit" value="Continue">
         </form>
+
+        <P>Stay informed about news, special offers, products and services from or on behalf of MINI Canada.</P>
+    </section>
+
+    <section class="mini-innovation">
+        <h2>Iconic Design</h2>
+        <h3>Its good to be different</h3>
+        <p>MINI has always embraced difference. Since 1959, our Owners saw their MINI as an extension of their own unique selves. 
+            They customized it to reflect their personal style. They turned it into a symbol of individuality and self-expression. 
+            They defied the idea that a car is just a car, and in turn, defined us. So here’s to thinking different.
+            It’s what makes us see beyond the similar and open our minds to a bigger view. It’s what drives our world forward.</p>
+    </section>
+
+    <section class="gallery">
+        <h2 hidden>Gallery</h2>
+        <div class="electric three-items">
+            <h3 hidden>Electric</h3>
+            <img src="Images/lightBox2/one-electric.jpg" alt="electric">
+            <img src="Images/lightBox2/two-electric.jpg" alt="electric">
+            <img src="Images/lightBox2/three-electric.jpg" alt="electric">
+        </div>
+
+        <div class="threeDoor three-items">
+            <h3 hidden>Electric</h3>
+            <img src="Images/lightBox2/one-3.jpg" alt="3door">
+            <img src="Images/lightBox2/two-3.jpg" alt="3door">
+            <img src="Images/lightBox2/three-3.jpg" alt="3door">
+        </div>
+
+        <div class="fiveDoor three-items">
+            <h3 hidden>Electric</h3>
+            <img src="Images/lightBox2/one-5.jpg" alt="5door">
+            <img src="Images/lightBox2/two-5.jpg" alt="5door">
+            <img src="Images/lightBox2/three-5.jpg" alt="5door">
+        </div>
+
+        <div class="convertible three-items">
+            <h3 hidden>Electric</h3>
+            <img src="Images/lightBox2/one-convert.jpg" alt="convertible" width="40%">
+            <img src="Images/lightBox2/two-convert.jpg" alt="convertible">
+            <img src="Images/lightBox2/three-convert.jpg" alt="convertible" width="40%">
+        </div>
     </section>
 
     <section class="shop">
 
-        <h2 class="shop-nav">Shop</h2>
-
         <div class="shop-opt two-items">
-        <a href="#">Electric</a>
-        <a href="#">3 Door</a>
-        <a href="#">5 Door</a>
-        <a href="#">Convertible</a>
+        <a href="#" style="color:white; font-size: xx-large;">SHOP:</a>
+        <a href="#">ELECTRIC</a>
+        <a href="#">3 DOOR</a>
+        <a href="#">5 DOOR</a>
+        <a href="#">CONVERTIBLE</a>
         </div>
-
     </section>
+
+
+
+    <video muted autoplay><source src="https://86bd04aee645f41c2005-510904abdc95bfe9a6b152d3edc0036b.ssl.cf5.rackcdn.com/Public/img/2016-739165/content/electric/fast-facts.mp4?v=NwY8tz2G0hI8N6iLlo2v8m4NZBYEb6Dj3jJYlFRgPBM1"></video>
 
     <footer class="footer">
         <h2 hidden class="footer">Site-footer</h2>
